@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let TheMinh ={
+            name:"Nguyễn Thế Minh",
+            age:"18",
+            job:"IT",
+            status:"trap boy",
+            height:"165cm",
+            weight:"60kg",
+        }
+           function Student(name, age, status) {
+         this.name = name;
+         this.age = age;
+         this.status = status;
+         this.introduce = function(){
+             console.log(this);
+         }
+       }
+
+       let student1 = new Student("Thế Minh", 18, "Độc Thân");
+       let student2 = new Student("Nam Sơn", 19, "Hay ho");
+       let student3 = new Student("Lê Diên Tiến", 18, "Đang tìm hiểu");
+
+
+       console.log("St1", student1);
+       console.log("St2", student2);
+       console.log("St3", student3);  
+       
+       student1.introduce();
+       student2.introduce();
+       student3.introduce();
+      class Person {
+ constructor(name, age) {
+ this.name = name;
+ this.age = age;
+ }
+ sayHello() {
+ console.log("Hello!");
+ }
+}
+let person = new Person("Nam Sơn", 19);    
+console.log(person);
+class Students {
+    constructor(id,name){
+        this.id = id;
+        this.name = name;
+    }
+}
+const students = [
+    new student(1,"Nam Sơn"),
+    new student(2,"Thế Minh"),
+    new student(3,"Diên Tiến"),
+];
+console.log("Danh sach sinh vien",students);
+
+    </script>
+</body>
+</html>
